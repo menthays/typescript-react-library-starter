@@ -1,0 +1,36 @@
+---
+name: useHelloWorld
+---
+
+import { Playground } from 'docz';
+import { useHelloWorld } from '../src';
+
+# useActive
+
+```js
+import { useHelloWorld } from '<your-lib-name-like-useHelloWorld>';
+```
+
+```jsx
+const Example = () => {
+  const [state, dispatch] = useHelloWorld();
+
+  return (
+    <button onClick={() => dispatch('hello')}>
+      Click me, {state}
+    </button>
+  );
+};
+```
+
+<Playground>
+  {() => {
+    const [state, dispatch] = useHelloWorld();
+
+    return (
+      <button onClick={() => dispatch('hello')}>
+        Click me, {state}
+      </button>
+    );
+  }}
+</Playground>

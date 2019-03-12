@@ -1,0 +1,39 @@
+---
+name: Introduction
+route: /
+order: 1
+---
+
+# Introduction
+
+**Use Events** - Events turned into React Hooks.
+Read about [Hooks](https://reactjs.org/docs/hooks-intro.html) feature.
+
+## Install
+
+> Note: React 16.8+ is required for Hooks.
+
+### With npm
+
+```sh
+npm i <your-lib-name-like-useHelloWorld>
+```
+
+
+## Quick Examples
+
+```jsx
+import { useHelloWorld } from '<your-lib-name-like-useHelloWorld>';
+```
+
+```jsx
+const App = () => {
+  const [state, dispatch] = useHelloWorld();
+
+  return (
+    <button onClick={() => dispatch('hello')}>
+      Click me, {state}
+    </button>
+  );
+};
+```

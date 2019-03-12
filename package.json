@@ -1,0 +1,71 @@
+{
+  "name": "typescript-react-library-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Scaffold for writing react-related library in typescript with coooool tools.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/menthays/typescript-react-library-starter.git"
+  },
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "test": "jest",
+    "tsc": "tsc --noEmit",
+    "build": "pack build",
+    "publish": "pack publish"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-typescript",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "presets": [
+          "@babel/preset-env"
+        ]
+      }
+    }
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "@pika/pack": "0.3.5",
+    "@pika/plugin-build-node": "0.3.14",
+    "@pika/plugin-build-types": "0.3.14",
+    "@pika/plugin-build-web": "0.3.14",
+    "@pika/plugin-standard-pkg": "0.3.14",
+    "@types/jest": "24.0.11",
+    "@types/react": "16.8.7",
+    "docz": "0.13.7",
+    "docz-theme-default": "0.12.9",
+    "jest": "24.4.0",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-hooks-testing-library": "0.3.6",
+    "react-testing-library": "6.0.0",
+    "typescript": "3.3.3333"
+  }
+}
