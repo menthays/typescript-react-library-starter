@@ -65,7 +65,7 @@
     "react": "16.8.5",
     "react-dom": "16.8.5",
     "react-hooks-testing-library": "0.3.7",
-    "react-testing-library": "6.0.0",
+    "react-testing-library": "6.0.3",
     "typescript": "3.3.4000"
   }
 }
