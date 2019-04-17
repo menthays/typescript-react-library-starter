@@ -64,7 +64,7 @@
     "jest": "24.7.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-hooks-testing-library": "0.3.8",
+    "react-hooks-testing-library": "0.4.1",
     "react-testing-library": "6.1.2",
     "typescript": "3.3.4000"
   }
