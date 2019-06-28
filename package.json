@@ -11,7 +11,6 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "test": "jest",
-    "tsc": "tsc --noEmit",
     "build": "pack build",
     "publish": "pack publish"
   },
